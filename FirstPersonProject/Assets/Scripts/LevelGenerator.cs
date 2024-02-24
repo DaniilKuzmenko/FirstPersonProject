@@ -37,8 +37,10 @@ public class LevelGenerator : MonoBehaviour
             {
             for (int z = (int)pos.z + offsetZ; z < pos.z + PIRAMYD_BASE - offsetZ; z++)
                 {
-                    Instantiate(cubePrefab, new Vector3(x + 0.5f, y+ 0.5f, z + 0.5f), Quaternion.identity);
+                    GameObject obj = Instantiate(cubePrefab, new Vector3(x + 0.5f, y+ 0.5f, z + 0.5f), Quaternion.identity);
+                    obj.transform.SetParent(transform);
                 }
+                
             }
             offsetX++;
             offsetZ++;  
