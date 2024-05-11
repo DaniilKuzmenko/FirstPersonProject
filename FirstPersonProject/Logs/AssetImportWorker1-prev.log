@@ -15,7 +15,7 @@ C:/Users/okuzm/OneDrive/Документы/GitHub/FirstPersonProject/FirstPerson
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-61803
+63917
 Successfully changed project path to: C:/Users/okuzm/OneDrive/Документы/GitHub/FirstPersonProject/FirstPersonProject
 C:/Users/okuzm/OneDrive/Документы/GitHub/FirstPersonProject/FirstPersonProject
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ C:/Users/okuzm/OneDrive/Документы/GitHub/FirstPersonProject/FirstPerson
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [43440] Host "[IP] 192.168.0.36 [Port] 0 [Flags] 2 [Guid] 3739745767 [EditorId] 3739745767 [Version] 1048832 [Id] WindowsEditor(7,HP_ENVY) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [47504] Host "[IP] 192.168.0.35 [Port] 0 [Flags] 2 [Guid] 2608074397 [EditorId] 2608074397 [Version] 1048832 [Id] WindowsEditor(7,HP_ENVY) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [43440] Host "[IP] 192.168.0.36 [Port] 0 [Flags] 2 [Guid] 3739745767 [EditorId] 3739745767 [Version] 1048832 [Id] WindowsEditor(7,HP_ENVY) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [47504] Host "[IP] 192.168.0.35 [Port] 0 [Flags] 2 [Guid] 2608074397 [EditorId] 2608074397 [Version] 1048832 [Id] WindowsEditor(7,HP_ENVY) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 19 workers.
-Refreshing native plugins compatible for Editor in 4308.86 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 22.80 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.9f1 (ea401c316338)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Resources/UnitySubsystems
@@ -62,54 +62,55 @@ Initialize engine version: 2022.3.9f1 (ea401c316338)
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: Microsoft Basic Render Driver (ID=0x8c)
-    Vendor:   Microsoft
+    Renderer: Intel(R) Iris(R) Xe Graphics (ID=0xa7a0)
+    Vendor:   Intel
     VRAM:     8038 MB
+    Driver:   31.0.101.4502
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56688
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56064
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.614896 seconds.
-- Loaded All Assemblies, in 24.205 seconds
+Registered in 0.036668 seconds.
+- Loaded All Assemblies, in  1.125 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 1010 ms
+Android Extension - Scanning For ADB Devices 3849 ms
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.882 seconds
-Domain Reload Profiling: 26086ms
-	BeginReloadAssembly (19354ms)
+- Finished resetting the current domain, in  6.057 seconds
+Domain Reload Profiling: 7183ms
+	BeginReloadAssembly (339ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (832ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (678ms)
-	LoadAllAssembliesAndSetupDomain (3328ms)
-		LoadAssemblies (19352ms)
+		CreateAndSetChildDomain (3ms)
+	RebuildCommonClasses (112ms)
+	RebuildNativeTypeToScriptingClass (38ms)
+	initialDomainReloadingComplete (207ms)
+	LoadAllAssembliesAndSetupDomain (425ms)
+		LoadAssemblies (329ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (3326ms)
-			TypeCache.Refresh (3322ms)
-				TypeCache.ScanAssembly (2719ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (3ms)
-	FinalizeReload (1883ms)
+		AnalyzeDomain (420ms)
+			TypeCache.Refresh (414ms)
+				TypeCache.ScanAssembly (377ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (6063ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1755ms)
+		SetupLoadedEditorAssemblies (5710ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (1499ms)
-			SetLoadedEditorAssemblies (9ms)
+			InitializePlatformSupportModulesInManaged (4509ms)
+			SetLoadedEditorAssemblies (32ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (4ms)
-			ProcessInitializeOnLoadAttributes (166ms)
-			ProcessInitializeOnLoadMethodAttributes (77ms)
+			BeforeProcessingInitializeOnLoad (15ms)
+			ProcessInitializeOnLoadAttributes (730ms)
+			ProcessInitializeOnLoadMethodAttributes (424ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -117,8 +118,8 @@ Domain Reload Profiling: 26086ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  7.678 seconds
-Refreshing native plugins compatible for Editor in 12.76 ms, found 3 plugins.
+- Loaded All Assemblies, in  4.450 seconds
+Refreshing native plugins compatible for Editor in 6.63 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Package Manager log level set to [2]
@@ -126,115 +127,48 @@ Package Manager log level set to [2]
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.262 seconds
-Domain Reload Profiling: 8931ms
-	BeginReloadAssembly (287ms)
+- Finished resetting the current domain, in  2.021 seconds
+Domain Reload Profiling: 6462ms
+	BeginReloadAssembly (529ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (10ms)
+		DisableScriptedObjects (26ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (41ms)
-	RebuildCommonClasses (67ms)
-	RebuildNativeTypeToScriptingClass (23ms)
-	initialDomainReloadingComplete (88ms)
-	LoadAllAssembliesAndSetupDomain (7201ms)
-		LoadAssemblies (6482ms)
+		CreateAndSetChildDomain (60ms)
+	RebuildCommonClasses (97ms)
+	RebuildNativeTypeToScriptingClass (25ms)
+	initialDomainReloadingComplete (158ms)
+	LoadAllAssembliesAndSetupDomain (3629ms)
+		LoadAssemblies (3356ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (882ms)
-			TypeCache.Refresh (844ms)
-				TypeCache.ScanAssembly (637ms)
-			ScanForSourceGeneratedMonoScriptInfo (31ms)
-			ResolveRequiredComponents (6ms)
-	FinalizeReload (1265ms)
+		AnalyzeDomain (593ms)
+			TypeCache.Refresh (522ms)
+				TypeCache.ScanAssembly (478ms)
+			ScanForSourceGeneratedMonoScriptInfo (59ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (2024ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (892ms)
+		SetupLoadedEditorAssemblies (1539ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (57ms)
-			SetLoadedEditorAssemblies (6ms)
+			InitializePlatformSupportModulesInManaged (90ms)
+			SetLoadedEditorAssemblies (11ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (131ms)
-			ProcessInitializeOnLoadAttributes (641ms)
-			ProcessInitializeOnLoadMethodAttributes (41ms)
-			AfterProcessingInitializeOnLoad (16ms)
+			BeforeProcessingInitializeOnLoad (281ms)
+			ProcessInitializeOnLoadAttributes (1062ms)
+			ProcessInitializeOnLoadMethodAttributes (67ms)
+			AfterProcessingInitializeOnLoad (26ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.20 seconds
-Refreshing native plugins compatible for Editor in 11.24 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (17ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.30 seconds
+Refreshing native plugins compatible for Editor in 14.53 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3077 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 31 unused Assets / (33.8 MB). Loaded Objects now: 3544.
-Memory consumption went from 120.5 MB to 86.7 MB.
-Total: 6.933800 ms (FindLiveObjects: 0.187600 ms CreateObjectMapping: 0.073400 ms MarkObjects: 6.481600 ms  DeleteObjects: 0.190100 ms)
+Unloading 3095 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 31 unused Assets / (56.8 KB). Loaded Objects now: 3562.
+Memory consumption went from 125.0 MB to 124.9 MB.
+Total: 8.043100 ms (FindLiveObjects: 0.644200 ms CreateObjectMapping: 0.301900 ms MarkObjects: 6.798700 ms  DeleteObjects: 0.294800 ms)
 
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.838 seconds
-Refreshing native plugins compatible for Editor in 4.99 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.901 seconds
-Domain Reload Profiling: 2733ms
-	BeginReloadAssembly (264ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (12ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (53ms)
-	RebuildCommonClasses (53ms)
-	RebuildNativeTypeToScriptingClass (20ms)
-	initialDomainReloadingComplete (56ms)
-	LoadAllAssembliesAndSetupDomain (439ms)
-		LoadAssemblies (560ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (21ms)
-			TypeCache.Refresh (10ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (8ms)
-	FinalizeReload (1902ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (737ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (43ms)
-			SetLoadedEditorAssemblies (4ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (97ms)
-			ProcessInitializeOnLoadAttributes (535ms)
-			ProcessInitializeOnLoadMethodAttributes (44ms)
-			AfterProcessingInitializeOnLoad (13ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (16ms)
-Refreshing native plugins compatible for Editor in 4.22 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3069 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 22 unused Assets / (30.5 KB). Loaded Objects now: 3547.
-Memory consumption went from 118.8 MB to 118.7 MB.
-Total: 5.019900 ms (FindLiveObjects: 0.241000 ms CreateObjectMapping: 0.114600 ms MarkObjects: 4.588100 ms  DeleteObjects: 0.074500 ms)
-
-Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
@@ -251,197 +185,463 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 526971.720819 seconds.
-  path: Assets/Prefabs/Ground.prefab
-  artifactKey: Guid(4c596abf7de2a6a4a8a47e185cc21115) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Ground.prefab using Guid(4c596abf7de2a6a4a8a47e185cc21115) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77b7622a0db9d9e40cc1fed2e68cf9e1') in 0.209433 seconds
+  Time since last request: 1875843.965098 seconds.
+  path: Assets/Scripts/Slot.cs
+  artifactKey: Guid(92e2ace8220ed9741b45595c969fbd39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Slot.cs using Guid(92e2ace8220ed9741b45595c969fbd39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8249ec05ac5fbca4ca6aac9f586874b4') in 0.011968 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 11
+Number of asset objects unloaded after import = 0
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.476 seconds
-Refreshing native plugins compatible for Editor in 2.98 ms, found 3 plugins.
+- Loaded All Assemblies, in  9.063 seconds
+Refreshing native plugins compatible for Editor in 2.39 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.983 seconds
-Domain Reload Profiling: 1456ms
-	BeginReloadAssembly (181ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (10ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (38ms)
-	RebuildCommonClasses (35ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (32ms)
-	LoadAllAssembliesAndSetupDomain (213ms)
-		LoadAssemblies (297ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (15ms)
-			TypeCache.Refresh (7ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (7ms)
-	FinalizeReload (983ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (402ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (31ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (69ms)
-			ProcessInitializeOnLoadAttributes (273ms)
-			ProcessInitializeOnLoadMethodAttributes (19ms)
-			AfterProcessingInitializeOnLoad (7ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (6ms)
-Refreshing native plugins compatible for Editor in 3.98 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3068 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 22 unused Assets / (30.6 KB). Loaded Objects now: 3558.
-Memory consumption went from 118.7 MB to 118.6 MB.
-Total: 3.293400 ms (FindLiveObjects: 0.227900 ms CreateObjectMapping: 0.123300 ms MarkObjects: 2.887800 ms  DeleteObjects: 0.053000 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.540 seconds
-Refreshing native plugins compatible for Editor in 6.59 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.848 seconds
-Domain Reload Profiling: 1387ms
-	BeginReloadAssembly (177ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (35ms)
-	RebuildCommonClasses (35ms)
-	RebuildNativeTypeToScriptingClass (18ms)
-	initialDomainReloadingComplete (33ms)
-	LoadAllAssembliesAndSetupDomain (274ms)
-		LoadAssemblies (344ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (15ms)
-			TypeCache.Refresh (8ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (849ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (355ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (25ms)
-			SetLoadedEditorAssemblies (4ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (58ms)
-			ProcessInitializeOnLoadAttributes (242ms)
-			ProcessInitializeOnLoadMethodAttributes (20ms)
-			AfterProcessingInitializeOnLoad (6ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (6ms)
-Refreshing native plugins compatible for Editor in 2.82 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3069 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 22 unused Assets / (30.6 KB). Loaded Objects now: 3561.
-Memory consumption went from 118.9 MB to 118.9 MB.
-Total: 48.250700 ms (FindLiveObjects: 0.690300 ms CreateObjectMapping: 0.126800 ms MarkObjects: 47.368500 ms  DeleteObjects: 0.063400 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.575 seconds
-Refreshing native plugins compatible for Editor in 6.77 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.688 seconds
-Domain Reload Profiling: 2258ms
-	BeginReloadAssembly (190ms)
+- Finished resetting the current domain, in 62.720 seconds
+Domain Reload Profiling: 71782ms
+	BeginReloadAssembly (222ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (6ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (34ms)
-	RebuildCommonClasses (38ms)
-	RebuildNativeTypeToScriptingClass (19ms)
-	initialDomainReloadingComplete (32ms)
-	LoadAllAssembliesAndSetupDomain (292ms)
-		LoadAssemblies (379ms)
+		CreateAndSetChildDomain (113ms)
+	RebuildCommonClasses (21ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (21ms)
+	LoadAllAssembliesAndSetupDomain (8790ms)
+		LoadAssemblies (8834ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (25ms)
-			TypeCache.Refresh (8ms)
+		AnalyzeDomain (18ms)
+			TypeCache.Refresh (7ms)
 				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (15ms)
-	FinalizeReload (1688ms)
+			ScanForSourceGeneratedMonoScriptInfo (6ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (62721ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (662ms)
+		SetupLoadedEditorAssemblies (352ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (43ms)
-			SetLoadedEditorAssemblies (3ms)
+			InitializePlatformSupportModulesInManaged (25ms)
+			SetLoadedEditorAssemblies (2ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (123ms)
-			ProcessInitializeOnLoadAttributes (435ms)
-			ProcessInitializeOnLoadMethodAttributes (43ms)
-			AfterProcessingInitializeOnLoad (14ms)
+			BeforeProcessingInitializeOnLoad (54ms)
+			ProcessInitializeOnLoadAttributes (246ms)
+			ProcessInitializeOnLoadMethodAttributes (17ms)
+			AfterProcessingInitializeOnLoad (7ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (13ms)
-Refreshing native plugins compatible for Editor in 3.07 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (6ms)
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+Refreshing native plugins compatible for Editor in 5.93 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3070 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3073 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 22 unused Assets / (30.6 KB). Loaded Objects now: 3565.
-Memory consumption went from 119.0 MB to 119.0 MB.
-Total: 6.716000 ms (FindLiveObjects: 0.198800 ms CreateObjectMapping: 0.118600 ms MarkObjects: 6.338900 ms  DeleteObjects: 0.058200 ms)
+Memory consumption went from 119.6 MB to 119.6 MB.
+Total: 4.273900 ms (FindLiveObjects: 0.434000 ms CreateObjectMapping: 0.282600 ms MarkObjects: 3.498600 ms  DeleteObjects: 0.057700 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -459,304 +659,469 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 3877.675330 seconds.
-  path: Assets/Materials/pack_3530346.mat
-  artifactKey: Guid(92bad9b00830acc48906226cb80d738f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/pack_3530346.mat using Guid(92bad9b00830acc48906226cb80d738f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00ab4d0e7ea06e3f80df676434a87d3a') in 0.261812 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 54.714270 seconds.
-  path: Assets/Resources/Meat.png
-  artifactKey: Guid(80115683cd53d4443b89021963ec2772) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Meat.png using Guid(80115683cd53d4443b89021963ec2772) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd48f3b5c4e19b43747e52019e3ddcf41') in 0.090626 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000195 seconds.
-  path: Assets/Resources/Pickaxe.png
-  artifactKey: Guid(aefa1521dce4c294fa2cfe0a47a1b8b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Pickaxe.png using Guid(aefa1521dce4c294fa2cfe0a47a1b8b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc39d0087ee87e3d18d09804365f42f4') in 0.032222 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 313.778072 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue1.png
-  artifactKey: Guid(236328a9dcc1cea4ea7fdc8f85dc90a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue1.png using Guid(236328a9dcc1cea4ea7fdc8f85dc90a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7f9113d94d0f61854eac7665809e4c1') in 0.067145 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue2.png
-  artifactKey: Guid(114a45193ee1ee14b96d45c97ac2e784) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue2.png using Guid(114a45193ee1ee14b96d45c97ac2e784) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eba7cca5357a7f6b6af0b9fdbc55d0ea') in 0.052658 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.001525 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue5.png
-  artifactKey: Guid(348a9ad30d5c48b4eab896d1a7cd320b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue5.png using Guid(348a9ad30d5c48b4eab896d1a7cd320b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dda7623c42b487b8beb2327c236a9ee0') in 0.070620 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.001110 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue6.png
-  artifactKey: Guid(9d55314dec947664c97873df94733489) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue6.png using Guid(9d55314dec947664c97873df94733489) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a165a11811470348af4b937adeaf7d1') in 0.050077 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 2.874672 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue9.png
-  artifactKey: Guid(45a45baf129d4474fae5c9f5b6b6e2fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue9.png using Guid(45a45baf129d4474fae5c9f5b6b6e2fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed42fbed5424297d370c2bf056acfc07') in 0.042482 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.104460 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue11.png
-  artifactKey: Guid(ad038c055193bec4686ce7acfb1fd249) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue11.png using Guid(ad038c055193bec4686ce7acfb1fd249) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c512a5656ca8643ffb5a018edd66c1d') in 0.032040 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.314965 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue13.png
-  artifactKey: Guid(569a923c2528f534094780108913bc3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue13.png using Guid(569a923c2528f534094780108913bc3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c04e20ece077db23e11e5a71bcdb31da') in 0.031258 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.062186 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue15.png
-  artifactKey: Guid(8a21dfd75a18a2f4d96c926843304cae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue15.png using Guid(8a21dfd75a18a2f4d96c926843304cae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccb37b1d59f1988c2b11002558a8c99d') in 0.028990 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000694 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue17.png
-  artifactKey: Guid(fac5b2310ad62b044b05b42c92c63a99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue17.png using Guid(fac5b2310ad62b044b05b42c92c63a99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ba4c9881e4c261ff6e80375b0d9c73d') in 0.051622 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.288752 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue19.png
-  artifactKey: Guid(f87b2bcbeed82f543bc67731234ce119) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue19.png using Guid(f87b2bcbeed82f543bc67731234ce119) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '460036dbfaec92a793c03a7b8dc87eb3') in 0.037352 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue21.png
-  artifactKey: Guid(77668adc4bfbf67469dc8c434a09a7bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue21.png using Guid(77668adc4bfbf67469dc8c434a09a7bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82cf0f950fdb1a09915d4304f46b0703') in 0.045936 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.153420 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue23.png
-  artifactKey: Guid(1fff2ada470396549beb1583117d6bf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue23.png using Guid(1fff2ada470396549beb1583117d6bf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6190619790d48f861c9a7d47e4eb5b35') in 0.055739 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue24.png
-  artifactKey: Guid(f415f53f0663a744599fe201168b7929) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue24.png using Guid(f415f53f0663a744599fe201168b7929) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0d35be5c8a6b1db5f406039aa7b7227') in 0.053457 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.214405 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue27.png
-  artifactKey: Guid(ee8346b6517631c41833c92aa160e5c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue27.png using Guid(ee8346b6517631c41833c92aa160e5c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1b8d5b393403fa4c2f6b772fcffbcf1') in 0.041596 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.108485 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue29.png
-  artifactKey: Guid(6bc1349f6a52aaf4487a9a83eecc801b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue29.png using Guid(6bc1349f6a52aaf4487a9a83eecc801b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '225b86d8e7346f86a4ebdaf389674413') in 0.034068 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.001244 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue31.png
-  artifactKey: Guid(e6a0eec1fb1aaee4c9a38ddc2b140022) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue31.png using Guid(e6a0eec1fb1aaee4c9a38ddc2b140022) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '511a1a49b963ce2e112b1a3410d604b0') in 0.054843 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.319707 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue33.png
-  artifactKey: Guid(0ad19475630f9dc43ad0cedd042a0a6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue33.png using Guid(0ad19475630f9dc43ad0cedd042a0a6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce3e4a6b5cd1d3fb4366b10eb34bc543') in 0.030824 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue34.png
-  artifactKey: Guid(1314205300f51bc419aa0cc076108250) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue34.png using Guid(1314205300f51bc419aa0cc076108250) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e36a93d6363e49da81dce35d70c95da2') in 0.022254 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.293337 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue37.png
-  artifactKey: Guid(eb738a44b7a72674fb85b6dc9076c2a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue37.png using Guid(eb738a44b7a72674fb85b6dc9076c2a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '530a6e4de755458f9cd047398b737b70') in 0.040129 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue39.png
-  artifactKey: Guid(6d96d175236dba343b85506112453938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue39.png using Guid(6d96d175236dba343b85506112453938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e94ae327a6bdf4d114c64a0877ef556e') in 0.037341 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.018055 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue41.png
-  artifactKey: Guid(57580af7a8a474e43b65a155010e8db1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue41.png using Guid(57580af7a8a474e43b65a155010e8db1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1a4ac6546888e4cc9af5bc712814acf') in 0.045364 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.002312 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue43.png
-  artifactKey: Guid(632e4754e00985642ac6e1fcce39415e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue43.png using Guid(632e4754e00985642ac6e1fcce39415e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4af5c2595144e81fd237ab9b380c38aa') in 0.038883 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.157644 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue45.png
-  artifactKey: Guid(4589e2bdcae0eff469f70f0d960d36d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue45.png using Guid(4589e2bdcae0eff469f70f0d960d36d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f419cf591b832671d70898ca2ee27c9') in 0.027064 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000420 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue46.png
-  artifactKey: Guid(334685a5eefd1ff4295394c8abf033f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue46.png using Guid(334685a5eefd1ff4295394c8abf033f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57427882c6c99a6c6f1d95242048443f') in 0.034830 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.071243 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue49.png
-  artifactKey: Guid(01b177a7da31ff0469c19b740f6a0558) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue49.png using Guid(01b177a7da31ff0469c19b740f6a0558) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dca95b3364e646fce56354a8e3b4d837') in 0.032291 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.169216 seconds.
-  path: Assets/StoneUI/Samples/button_moss_green.png
-  artifactKey: Guid(a314d3aa2b7b3f2468f1b05da26213c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Samples/button_moss_green.png using Guid(a314d3aa2b7b3f2468f1b05da26213c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b2188442f9553770030445733630f21') in 0.035667 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000427 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Green/button_moss_green1.png
-  artifactKey: Guid(2c515502e486a5144b737191aa6bfbc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Green/button_moss_green1.png using Guid(2c515502e486a5144b737191aa6bfbc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fee68476154d861eb63b3e9446e96fb2') in 0.037525 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.064922 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Green/button_moss_green4.png
-  artifactKey: Guid(955735b8f107b7a45a87ecebbb4deabb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Green/button_moss_green4.png using Guid(955735b8f107b7a45a87ecebbb4deabb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd29d37c5c378c986542d62916a0e4c39') in 0.025873 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.163343 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Green/button_moss_green6.png
-  artifactKey: Guid(7407206070acc7047b2a156176e5783e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Green/button_moss_green6.png using Guid(7407206070acc7047b2a156176e5783e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d4f81a9bfab4fa2a21529dccd16a17f') in 0.038707 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.001887 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Green/button_moss_green8.png
-  artifactKey: Guid(81133356fa750454cba8ddb1bd74a8c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Green/button_moss_green8.png using Guid(81133356fa750454cba8ddb1bd74a8c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42124f245ccd31a971487f6b1ab8a9d8') in 0.035941 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.016633 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Green/button_moss_green10.png
-  artifactKey: Guid(9502b58af7fc73941b0f7380b5cff83c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Green/button_moss_green10.png using Guid(9502b58af7fc73941b0f7380b5cff83c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5572980489b6fb1505a78864ea550ebf') in 0.035599 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.517906 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Green/button_moss_green12.png
-  artifactKey: Guid(4ea1a3fa55fb9f840ad9c7d6826cdc93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Green/button_moss_green12.png using Guid(4ea1a3fa55fb9f840ad9c7d6826cdc93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5028274a75e7753eeb1320e6dcbd0be8') in 0.038410 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000320 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Green/button_moss_green13.png
-  artifactKey: Guid(4b56ce896219d6344aef693aa6b40285) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Green/button_moss_green13.png using Guid(4b56ce896219d6344aef693aa6b40285) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4925ef981b7ded247c1b6361c662dd62') in 0.034892 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.069624 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Green/button_moss_green16.png
-  artifactKey: Guid(369f255b79817e94f9371087f6536d42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Green/button_moss_green16.png using Guid(369f255b79817e94f9371087f6536d42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f610d69370d9f00b03648bd83e98b2d5') in 0.026441 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-TcpMessagingSession - receive error
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.091 seconds
+Refreshing native plugins compatible for Editor in 8.35 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.165 seconds
+Domain Reload Profiling: 3249ms
+	BeginReloadAssembly (460ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (19ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (83ms)
+	RebuildCommonClasses (55ms)
+	RebuildNativeTypeToScriptingClass (24ms)
+	initialDomainReloadingComplete (46ms)
+	LoadAllAssembliesAndSetupDomain (498ms)
+		LoadAssemblies (722ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (29ms)
+			TypeCache.Refresh (15ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (2166ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (773ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (59ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (112ms)
+			ProcessInitializeOnLoadAttributes (538ms)
+			ProcessInitializeOnLoadMethodAttributes (35ms)
+			AfterProcessingInitializeOnLoad (23ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (20ms)
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+State comes from an incompatible keyword space
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+Refreshing native plugins compatible for Editor in 7.18 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3074 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (30.7 KB). Loaded Objects now: 3568.
+Memory consumption went from 120.0 MB to 119.9 MB.
+Total: 5.926200 ms (FindLiveObjects: 0.841100 ms CreateObjectMapping: 0.353500 ms MarkObjects: 4.646300 ms  DeleteObjects: 0.083500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

@@ -16,29 +16,56 @@ public class PlayerController : MonoBehaviour
     private GameObject particleBlockObject, tool;
     private const float hitScaleSpeed = 15f;
     private float hitLastTime;
+
+    [HideInInspector]
+    public List<ItemData> inventoryItems, currentChestItems;
+    private bool canMove = true;
+
+    public static PlayerController instance;
+
+    private void Awake()
+    {
+        instance = this;
+    }
                                         
 
     private void Start()
     {
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+        InventoryManager.instance.CreateItem(0, inventoryItems);
     }
+    
 
     private void FixedUpdate()
     {
+        if (canMove)
+        {
         Rotate();
+        }
     }
 
     private void Update()
     {
-        Move();
-        RaycastHit hit;
-        if (Physics.Raycast(playerCamera.transform.position, playerCamera.transform.forward, out hit, 5f))
+        if (canMove)
         {
-            if (Input.GetMouseButton(0))
+            Move();
+            RaycastHit hit;
+            if (Physics.Raycast(playerCamera.transform.position, playerCamera.transform.forward, out hit, 5f))
             {
-                ObjectInteraction(hit.transform.gameObject);
+                if (Input.GetMouseButton(0))
+                {
+                    ObjectInteraction(hit.transform.gameObject);
+                }
             }
+        }
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            OpenInventory();
+        }
+        else if (Input.GetKeyDown (KeyCode.Q)) 
+        {
+            CloseInventoryPanel();
         }
     }
     private void Rotate()
@@ -93,7 +120,77 @@ public class PlayerController : MonoBehaviour
                 Dig(currentObj.GetComponent<Block>());
                 break;
             case "Enemy":
-                break;    
+                break;
+            case "Chest":
+                currentChestItems = currentObj.GetComponent<Chest>().chestItems;
+                OpenChest();
+                break;        
+        }
+    }
+
+    private void OpenInventory()
+    {
+        if (!InventoryManager.instance.GetInventoryPanel().activeSelf) 
+        {
+            
+
+            InventoryManager.instance.GetInventoryPanel().SetActive(true);
+            if (inventoryItems.Count > 0)
+            {
+                for (int i = 0; i < inventoryItems.Count; i++)
+                {
+                    InventoryManager.instance.InstantiateItem(inventoryItems[i], InventoryManager.instance.GetInventoryContent().transform, InventoryManager.instance.inventorySlots);
+                }
+            }
+        }
+    }
+
+    private void OpenChest()
+    {
+
+        if (!InventoryManager.instance.GetChestPanel().activeSelf)
+        {
+            SwitchCursor(true, CursorLockMode.Confined);
+            InventoryManager.instance.GetChestPanel().SetActive(true);
+            for (int i = 0; i < currentChestItems.Count; i++)
+            {
+                InventoryManager.instance.InstantiateItem(currentChestItems[i], InventoryManager.instance.GetChestContent(). transform, InventoryManager.instance.currentChestSlots);
+
+            }
+        }
+    }
+
+    private void SwitchCursor(bool active, CursorLockMode lockMode) 
+    {
+        Cursor.visible = true;
+        Cursor.lockState = lockMode;
+        canMove = !active;
+    }
+
+    private void CloseInventoryPanel()
+    {
+        var inventoryManager = InventoryManager.instance;
+        SwitchCursor(false, CursorLockMode.Locked);
+        foreach (GameObject slot in inventoryManager.currentChestSlots)
+        {
+            Destroy(slot);
+        }
+        foreach (GameObject slot in inventoryManager.inventorySlots)
+        {
+            Destroy(slot);
+        }
+        inventoryManager.currentChestSlots.Clear();
+        inventoryManager.inventorySlots.Clear();
+        inventoryManager.GetChestPanel().SetActive(false);
+        inventoryManager.GetInventoryPanel().SetActive(false);
+    }
+
+    private void OnTriggerEnter(Collider col)
+    {
+        if (col.gameObject.name.StartsWith("mini"))
+        {
+            InventoryManager.instance.CreateItem(2, inventoryItems);
+            Destroy(col.gameObject);
         }
     }
 }
