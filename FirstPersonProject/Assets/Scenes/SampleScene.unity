@@ -1340,6 +1340,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7785255728501406793, guid: a8c18b956f128bb47a807394bc13644b, type: 3}
   m_PrefabInstance: {fileID: 802923768}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &802923770 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7440254975354529523, guid: a8c18b956f128bb47a807394bc13644b, type: 3}
+  m_PrefabInstance: {fileID: 802923768}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &824177287
 GameObject:
   m_ObjectHideFlags: 0
@@ -1781,9 +1786,14 @@ MonoBehaviour:
   characterController: {fileID: 1036546141}
   playerCamera: {fileID: 963194225}
   particleBlockObject: {fileID: 991874317668910736, guid: 9949f72c596564747804a8a6c2b55047, type: 3}
-  tool: {fileID: 253688905}
   inventoryItems: []
   currentChestItems: []
+  itemYouCanEquipeName: EquipeNotSelected
+  equipableItems:
+  - {fileID: 253688905}
+  - {fileID: 802923770}
+  - {fileID: 1626472390}
+  - {fileID: 985980857}
 --- !u!1 &1041851478
 GameObject:
   m_ObjectHideFlags: 0
@@ -2491,6 +2501,11 @@ PrefabInstance:
 --- !u!4 &1626472389 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7504920491754627311, guid: 68d103b645066c34a8f278271229b5ea, type: 3}
+  m_PrefabInstance: {fileID: 1626472388}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1626472390 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7164388905215982165, guid: 68d103b645066c34a8f278271229b5ea, type: 3}
   m_PrefabInstance: {fileID: 1626472388}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1661886058
