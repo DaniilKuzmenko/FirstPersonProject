@@ -41,10 +41,14 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
+        inventoryItems = new List<ItemData>();
+        currentChestItems = new List<ItemData>();
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
         InventoryManager.instance.CreateItem(0, inventoryItems);
+        EquipItem("Pickaxe");
     }
+
     
 
     private void FixedUpdate()
@@ -67,15 +71,23 @@ public class PlayerController : MonoBehaviour
                 {
                     ObjectInteraction(hit.transform.gameObject);
                 }
+                else if (Input.GetMouseButton(1))
+                {
+                    ItemAbility();
+                }
             }
         }
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) && !InventoryManager.instance.GetInventoryPanel().activeSelf)
         {
             OpenInventory();
         }
         else if (Input.GetKeyDown (KeyCode.Q)) 
         {
             CloseInventoryPanel();
+        }
+        else if (Input.GetKeyDown(KeyCode.E) && InventoryManager.instance.GetInventoryPanel().activeSelf && itemYouCanEquipeName != EQUIPE_NOT_SELECTED_TEXT)
+        {
+            EquipItem(itemYouCanEquipeName);
         }
     }
     private void Rotate()
@@ -204,6 +216,56 @@ public class PlayerController : MonoBehaviour
         inventoryManager.inventorySlots.Clear();
         inventoryManager.GetChestPanel().SetActive(false);
         inventoryManager.GetInventoryPanel().SetActive(false);
+    }
+
+    private void EquipItem (string toolName)
+    {
+        foreach (GameObject tool in equipableItems)
+        {
+            if (toolName == tool.name)
+            {
+                tool.SetActive(true);
+                currentEquipedItem = tool;
+                toolName = EQUIPE_NOT_SELECTED_TEXT;
+            }
+            else
+            {
+                tool.SetActive(false);
+            }
+        }
+    }
+
+    private void ItemAbility()
+    {
+        switch (currentEquipedItem.name)
+        {
+            case "Ground":
+                CreateBlock();
+                break;
+            case "Meat":
+                break;
+            default:
+                break;        
+        }
+    }
+
+    private void CreateBlock()
+    {
+        GameObject blockPref = Resources.Load<GameObject>("Ground");
+        Vector3 temPos = hit.transform.position;
+        Vector3 newBlockPos = Vector3.zero;
+        if (hit.transform.gameObject.tag == "Block")
+        {
+            GameObject currentBlock = Instantiate(blockPref);
+            if (hit.point.y == temPos.y + 0.5f)
+            {
+                newBlockPos = new Vector3(temPos.x, temPos.y + 1, temPos.z)
+            }
+            else if (hit.point.y == temPos.y - 0.5f)
+            {
+                newBlockPos = new Vector3(temPos.x, temPos.y - 1, temPos.z)
+            }
+        }
     }
 
     private void OnTriggerEnter(Collider col)
