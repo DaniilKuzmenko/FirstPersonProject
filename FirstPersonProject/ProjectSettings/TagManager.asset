@@ -7,6 +7,7 @@ TagManager:
   - Block
   - Chest
   - Slot
+  - Enemy
   layers:
   - Default
   - TransparentFX

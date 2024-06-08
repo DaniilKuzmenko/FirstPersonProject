@@ -359,6 +359,7 @@
 "Assets/Scripts/Block.cs"
 "Assets/Scripts/Chest.cs"
 "Assets/Scripts/Chunk.cs"
+"Assets/Scripts/Enemy.cs"
 "Assets/Scripts/Enums.cs"
 "Assets/Scripts/InventoryManager.cs"
 "Assets/Scripts/ItemData.cs"
