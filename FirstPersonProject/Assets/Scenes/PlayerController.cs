@@ -252,18 +252,55 @@ public class PlayerController : MonoBehaviour
     private void CreateBlock()
     {
         GameObject blockPref = Resources.Load<GameObject>("Ground");
-        Vector3 temPos = hit.transform.position;
+        Vector3 temPos = hit.transform.gameObject.transform.position;
         Vector3 newBlockPos = Vector3.zero;
         if (hit.transform.gameObject.tag == "Block")
         {
             GameObject currentBlock = Instantiate(blockPref);
             if (hit.point.y == temPos.y + 0.5f)
             {
-                newBlockPos = new Vector3(temPos.x, temPos.y + 1, temPos.z)
+                newBlockPos = new Vector3(temPos.x, temPos.y + 1, temPos.z);
             }
             else if (hit.point.y == temPos.y - 0.5f)
             {
-                newBlockPos = new Vector3(temPos.x, temPos.y - 1, temPos.z)
+                newBlockPos = new Vector3(temPos.x, temPos.y - 1, temPos.z);
+            }
+
+            if (hit.point.x == temPos.x + 0.5f)
+            {
+                newBlockPos = new Vector3(temPos.x + 1, temPos.y, temPos.z);
+            }
+            else if (hit.point.y == temPos.y - 0.5f)
+            {
+                newBlockPos = new Vector3(temPos.x - 1, temPos.y, temPos.z);
+            }
+
+            if (hit.point.y == temPos.y + 0.5f)
+            {
+                newBlockPos = new Vector3(temPos.x, temPos.y, temPos.z + 1);
+            }
+            else if (hit.point.y == temPos.y - 0.5f)
+            {
+                newBlockPos = new Vector3(temPos.x, temPos.y, temPos.z - 1);
+            }
+            currentBlock.transform.position = newBlockPos;
+            currentBlock.transform.SetParent(hit.transform.gameObject.transform.parent);
+            ModifyItemCount("Ground");
+        }
+    }
+
+    private void ModifyItemCount(string itemName)
+    {
+        foreach(ItemData item in inventoryItems)
+        {
+            if(item.name == itemName)
+            {
+                item.count--;
+                if(item.count <= 0)
+                {
+                    inventoryItems.Remove(item);
+                    EquipItem(inventoryItems[0].name);
+                }
             }
         }
     }
