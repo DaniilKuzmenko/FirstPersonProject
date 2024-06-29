@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    [SerializeField]
+    private MeshRenderer m_Renderer;
     private int health = 200;
 
     public void TakeDamage(int value)

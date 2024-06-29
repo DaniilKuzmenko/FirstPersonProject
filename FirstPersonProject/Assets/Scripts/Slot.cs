@@ -36,7 +36,7 @@ public class Slot : MonoBehaviour, IDragHandler, IEndDragHandler, IPointerDownHa
                 if (slots[i].GetComponent<Slot>().itemData.id == itemData.id)
                 {
                     items[i].count += itemData.count;
-                    slots[i].transform.Find("ItemCountText").GetComponent<Text>().text = slots[i].GetComponent<Slot>().itemData.count.ToString();
+                    slots[i].transform.Find("ItemCount").GetComponent<Text>().text = slots[i].GetComponent<Slot>().itemData.count.ToString();
                     Destroy(gameObject);
                     break;
                 }

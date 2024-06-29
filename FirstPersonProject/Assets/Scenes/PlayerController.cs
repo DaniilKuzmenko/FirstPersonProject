@@ -122,11 +122,15 @@ public class PlayerController : MonoBehaviour
     {
         if (Time.time - hitLastTime > 1 / hitScaleSpeed)
         {
-            currentEquipedItem.GetComponent<Animator>().SetTrigger("attack");
+            if (currentEquipedItem.TryGetComponent<Animator>(out Animator animator))
+            {
+                animator.SetTrigger("attack");
+            }
+
             hitLastTime = Time.time;
 
-            Tool currentToolInfo = null;
-            if(currentEquipedItem.TryGetComponent<Tool>(out currentToolInfo))
+        
+            if(currentEquipedItem.TryGetComponent(out Tool currentToolInfo))
             {
                 block.health -= currentToolInfo.damageToBlock;
             }
@@ -182,7 +186,7 @@ public class PlayerController : MonoBehaviour
     {
         if (!InventoryManager.instance.GetInventoryPanel().activeSelf) 
         {
-            
+            SwitchCursor(true, CursorLockMode.Confined);
 
             InventoryManager.instance.GetInventoryPanel().SetActive(true);
             if (inventoryItems.Count > 0)
@@ -287,21 +291,21 @@ public class PlayerController : MonoBehaviour
             {
                 newBlockPos = new Vector3(temPos.x + 1, temPos.y, temPos.z);
             }
-            else if (hit.point.y == temPos.y - 0.5f)
+            else if (hit.point.x == temPos.x - 0.5f)
             {
                 newBlockPos = new Vector3(temPos.x - 1, temPos.y, temPos.z);
             }
 
-            if (hit.point.y == temPos.y + 0.5f)
+            if (hit.point.z == temPos.z + 0.5f)
             {
                 newBlockPos = new Vector3(temPos.x, temPos.y, temPos.z + 1);
             }
-            else if (hit.point.y == temPos.y - 0.5f)
+            else if (hit.point.z == temPos.z - 0.5f)
             {
                 newBlockPos = new Vector3(temPos.x, temPos.y, temPos.z - 1);
             }
             currentBlock.transform.position = newBlockPos;
-            currentBlock.transform.SetParent(hit.transform.gameObject.transform.parent);
+            currentBlock.transform.SetParent(hit.transform.parent);
             ModifyItemCount("Ground");
         }
     }
@@ -316,7 +320,10 @@ public class PlayerController : MonoBehaviour
                 if(item.count <= 0)
                 {
                     inventoryItems.Remove(item);
-                    EquipItem(inventoryItems[0].name);
+                    if (inventoryItems.Count > 0)
+                    {
+                        EquipItem(inventoryItems[0].name);
+                    }
                 }
             }
         }
